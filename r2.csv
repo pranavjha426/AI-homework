@@ -1,0 +1,75 @@
+" If you're curious"""," explore.	",For all X curious?(X) impl explore?(X)
+" If it's sunny"""," let's have a picnic.	",sunny? impl picnic?(us)
+" If the sweater shrinks"""," donate it.	",shrinks?(sweater) impl donate?(sweater)
+" If you're thoughtful"""," consider others.	",For all X thoughtful?(X) impl consider_others?(X)
+" If you're thirsty"""," drink water.	","For all X thirsty?(X) impl drink?(X,water)"
+" If you're patient"""," wait calmly.	",For all X patient?(X) impl wait_calmly?(X)
+" If you need help"""," just ask me.	",For all X needs_help?(X) impl ask_me?(X)
+" If the fire alarm sounds"""," evacuate.	",fire_alarm?(sounds) impl evacuate?
+" If you're hungry"""," there's food in the fridge.	","hungry?(you) impl exists?(food,fridge)"
+" If the light is red"""," stop driving.	",red?(light) impl stop?(driving)
+" If the grass is tall"""," mow it.	",tall?(grass) impl mow?(grass)
+" If you're generous"""," share freely.	",For all X generous?(X) impl share_freely?(X)
+" If you're interested"""," learn more.	",For all X interested?(X) impl learn_more?(X)
+" If the milk smells bad"""," throw it out.	",smells_bad?(milk) impl throw_out?(milk)
+" If you're ready"""," let's begin.	",ready?(you) impl begin?(us)
+" If you're bored"""," read a book.	","For all X bored?(X) impl read?(X,book)"
+" If the road floods"""," find another route.	",flooded?(road) impl find?(another_route)
+" If you're tired"""," take a nap.	",For all X tired?(X) impl take_nap?(X)
+" If you're stuck"""," ask for guidance.	",For all X stuck?(X) impl ask_for_guidance?(X)
+" If you're early"""," wait outside.	",For all X early?(X) impl wait_outside?(X)
+" If the timer beeps"""," check the oven.	",beeps?(timer) impl check?(oven)
+" If the door is locked"""," use your key.	",locked?(door) impl use?(key)
+" If you heat water to 100°C"""," it boils.	","For all T geq?(temp(water,T), 100) impl boils?(water)"
+" If you smell gas"""," open the windows.	",smells?(gas) impl open?(windows)
+" If the music is too loud"""," turn it down.	",loud?(music) impl turn_down?(music)
+" If you're lonely"""," call a friend.	","For all X lonely?(X) impl call?(X,friend)"
+" If the shoes fit"""," buy them.	",fits?(shoes) impl buy?(shoes)
+" If the mail arrives"""," bring it in.	",arrives?(mail) impl bring_in?(mail)
+" If the fish smells fresh"""," buy it.	",smells_fresh?(fish) impl buy?(fish)
+" If it's midnight"""," go to sleep.	",midnight? impl sleep?(you)
+" If the mirror fogs"""," wipe it clean.	",fogs?(mirror) impl wipe_clean?(mirror)
+" If you're successful"""," stay humble.	",For all X successful?(X) impl stay_humble?(X)
+" If you're wrong"""," admit it.	",For all X wrong?(X) impl admit?(X)
+" If you're kind"""," help others.	",For all X kind?(X) impl help?(others)
+" If you're confused"""," ask questions.	",For all X confused?(X) impl ask?(questions)
+" If the wind blows"""," close the windows.	",blows?(wind) impl close?(windows)
+" If winter comes"""," spring can't be far behind.	",comes?(winter) impl near?(spring)
+" If the book ends"""," start another.	",ends?(book) impl start?(another_book)
+" If you're honest"""," tell the truth.	",For all X honest?(X) impl tell_truth?(X)
+" If the water boils"""," add the pasta.	",boils?(water) impl add?(pasta)
+" If you're happy"""," smile.	",For all X happy?(X) impl smile?(X)
+" If you hear thunder"""," come inside.	",hear?(thunder) impl come_inside?(you)
+" If the bell rings"""," answer the door.	",rings?(bell) impl answer?(door)
+" If you're scared"""," hold my hand.	",scared?(you) impl hold?(my_hand)
+" If you see Sarah"""," tell her I said hello.	","see?(you, Sarah) impl tell_hello?(you)"
+" If you finish first"""," help others.	","finish?(you, first) impl help?(others)"
+" If my dog hears a noise"""," he always barks.	","hears?(dog, noise) impl barks?(dog)"
+" If the pencil breaks"""," sharpen it.	",breaks?(pencil) impl sharpen?(pencil)
+" If you're excited"""," share the news.	",For all X excited?(X) impl share_news?(X)
+" If she arrives early"""," we can start the meeting sooner.	","less?(arr_time(she), X) impl less?(start_time(meeting)"
+" If you feel sick"""," stay home.	",For all X sick?(you) impl stay_home?(you)
+" If you eat too much sugar"""," you'll get a toothache.	","For all X eats?(you, sugar, X) and too_much?(X) impl toothache?(you)"
+" If the soup boils"""," lower the heat.	","For all X boils?(soup, X) impl lower_heat?(X)"
+" If you're confident"""," take the lead.	",For all X confident?(you) impl take_lead?(you)
+" If you find my keys"""," let me know.	","For all X finds?(you, my_keys) impl let_me_know?(you)"
+" If the ice cream melts"""," put it back.	","For all X melts?(ice_cream, X) impl put_back?(ice_cream)"
+" If you're adventurous"""," try new things.	",For all X adventurous?(you) impl try_new?(things)
+" If you're grateful"""," say thanks.	","For all X grateful?(you) impl say?(you, thanks)"
+" If we leave now"""," we'll catch the train.	","leave?(we, now) impl catch?(we, train)"
+" If the snow melts"""," watch for floods.	","For all X melts?(snow, X) impl watch_for?(floods)"
+" If the store is open"""," could you buy some milk?	","For all X open?(store, X) impl buy?(you, milk)"
+" If the package arrives"""," sign for it.	","For all X arrives?(package, X) impl sign_for?(package)"
+" If the power goes out"""," use candles.	","For all X goes_out?(power, X) impl use?(candles)"
+" If you break something"""," please tell me.	","For all X breaks?(you, something, X) impl tell?(me, you)"
+" If the food is hot"""," let it cool.	","For all X hot?(food, X) impl let_cool?(food)"
+" If the sunset is beaut"""," Iful""","For all X beautiful?(sunset, X) impl take_pictures?(sunset)"
+" If I had more time"""," I would learn to play piano.	","For all X greater?(time(me), X) impl learn_piano?(me)"
+" If the chair squeaks"""," fix it.	","For all X squeaks?(chair, X) impl fix?(chair)"
+" If you're dedicated"""," work consistently.	",For all X dedicated?(you) impl work_consistently?(you)
+" If the garden grows"""," share produce.	","For all X grows?(garden, X) impl share?(produce)"
+" If you're proud"""," celebrate.	",For all X proud?(you) impl celebrate?(you)
+" If you see a shooting star"""," make a wish.	","For all X sees?(you, shooting_star) impl make_wish?(you)"
+" If the phone rings"""," could you answer it?	","For all X rings?(phone, X) impl answer?(you, phone)"
+" If you're worried"""," talk to someone.	","For all X worried?(you) impl talk_to?(you, someone)"
+" If we hurry"""," we won't be late.	",hurry?(we) impl not?(late?(we))
